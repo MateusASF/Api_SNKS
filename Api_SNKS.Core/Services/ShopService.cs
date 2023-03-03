@@ -1,6 +1,8 @@
-﻿namespace Api_SNKS.Core.Services
+﻿using Api_SNKS.Core.Intrerfaces.Shop;
+
+namespace Api_SNKS.Core.Services
 {
-    internal class ShopService
+    public class ShopService : IShopService
     {
     }
 }
