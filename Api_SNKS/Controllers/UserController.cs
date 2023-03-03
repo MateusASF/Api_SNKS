@@ -1,6 +1,5 @@
 ﻿using Api_SNKS.Core.Intrerfaces.Users;
 using Api_SNKS.Core.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Api_SNKS.Controllers

@@ -19,11 +19,11 @@ namespace Api_SNKS.Infra.Data.Repository
         }
 
 
-        public async Task<User> GetProfileUserAsync(string idEvent)
+        public async Task<User> GetProfileUserAsync(string iduser)
         {
-            _logger.LogInformation("Chamando URL: {0}", _configuration["APIEvents - CityEventRepository: ConsultarEventosidAsync"]);
-            var query = "SELECT * FROM CityEvent WHERE idEvent = @idEvent";
-            DynamicParameters parameters = new(new { idEvent });
+            _logger.LogInformation("Chamando URL: {0}", _configuration["Api_SNKS - UserRepository: GetProfileUserAsync"]);
+            var query = "SELECT * FROM users WHERE id = @iduser";
+            DynamicParameters parameters = new(new { iduser });
             using var conn = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"));
             try
             {

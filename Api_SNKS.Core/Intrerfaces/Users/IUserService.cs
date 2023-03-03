@@ -5,6 +5,5 @@ namespace Api_SNKS.Core.Intrerfaces.Users
     public interface IUserService
     {
         Task <User> GetProfileUserAsync(string id);
-
     }
 }
